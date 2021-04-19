@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Insta-Paragraph</title>
+    </head>
+    <body>
+        <h1>*SCROLL DOWN TO SEE ALL INPUTS. PARAGRAPHS WILL BE DISPLAYED AT THE VERY BOTTOM OF THIS PAGE*</h1>
+        <span>
+        <div id="paragraph_1_div" width="49%">
+            <span id="span_1_para_1"><p>1. </p><input id="para_1_input_1" type="text"></span><br><br>
+            <span id="span_2_para_1"><p>2. </p><input id="para_1_input_2" type="text"></span><br><br>
+            <span id="span_3_para_1"><p>3. </p><input id="para_1_input_3" type="text"></span><br><br>
+            <span id="span_4_para_1"><p>4. </p><input id="para_1_input_4" type="text"></span><br><br>
+            <span id="span_5_para_1"><p>5. </p><input id="para_1_input_5" type="text"></span><br><br>
+            <span id="span_6_para_1"><p>6. </p><input id="para_1_input_6" type="text"></span><br><br>
+            <button onclick="getpara1()">Get Paragraph 1</button>
+        </div>
+        <div id="paragraph_2_div" width="49%">
+            <span id="span_1_para_2"><p>1. </p><input id="para_2_input_1" type="text"></span><br><br>
+            <span id="span_2_para_2"><p>2. </p><input id="para_2_input_2" type="text"></span><br><br>
+            <span id="span_3_para_2"><p>3. </p><input id="para_2_input_3" type="text"></span><br><br>
+            <span id="span_4_para_2"><p>4. </p><input id="para_2_input_4" type="text"></span><br><br>
+            <span id="span_5_para_2"><p>5. </p><input id="para_2_input_5" type="text"></span><br><br>
+            <span id="span_6_para_2"><p>6. </p><input id="para_2_input_6" type="text"></span><br><br>
+            <button onclick="getpara2()">Get Paragraph 2</button>
+        </div>
+        </span>
+        <br>
+        <p id="para1"></p>
+        <br>
+        <p id="para2"></p>
+        <script>
+            function getpara1(){
+                var input1 = document.getElementById("para_1_input_1").value;
+                var input2 = document.getElementById("para_1_input_2").value;
+                var input3 = document.getElementById("para_1_input_3").value;
+                var input4 = document.getElementById("para_1_input_4").value;
+                var input5 = document.getElementById("para_1_input_5").value;
+                var input6 = document.getElementById("para_1_input_6").value;
+                var para1 = input1 + input2 + input3 + input4 + input5 + input6;
+                document.getElementById("para1").innerHTML = para1;
+            }
+
+            function getpara2(){
+                var input7 = document.getElementById("para_2_input_1").value;
+                var input8 = document.getElementById("para_2_input_2").value;
+                var input9 = document.getElementById("para_2_input_3").value;
+                var input10 = document.getElementById("para_2_input_4").value;
+                var input11 = document.getElementById("para_2_input_5").value;
+                var input12 = document.getElementById("para_2_input_6").value;
+                var para2 = input7 + input8 + input9 + input10 + input11 + input12;
+                document.getElementById("para2").innerHTML = para2;
+            }
+        </script>
+    </body>
+</html>
